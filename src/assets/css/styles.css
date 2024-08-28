@@ -1,0 +1,136 @@
+/* Background */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.dark{
+    background: #0c0a10;
+}
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: #0c0a10;
+}
+* {
+    box-sizing: border-box;
+}
+
+.bg-completed {
+    background-color: green;
+}
+
+.bg-pending {
+    background-color: tomato;
+}
+
+.bg-in_progress {
+    background-color: turquoise;
+}
+
+.bg-cancelled {
+    background-color: red;
+}
+
+.bg-others {
+    background-color: grey;
+}
+
+.bg-for_review {
+    background-color: orange;
+}
+
+/* Border */
+.border-left-completed {
+    border-left: 5px solid green;
+}
+
+.border-left-pending {
+    border-left: 5px solid tomato;
+}
+
+.border-left-in_progress {
+    border-left: 5px solid turquoise;
+}
+
+.border-left-cancelled {
+    border-left: 5px solid red;
+}
+
+.border-left-others {
+    border-left: 5px solid grey;
+}
+
+.border-left-for_review {
+    border-left: 5px solid orange;
+}
+
+/* Login */
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.w-full {
+    width: -webkit-fill-available;
+    max-width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.primary-input {
+    background: #eee;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.primary-input:focus {
+    border: none;
+}
+
+.primary-color {
+    color: #FCD240;
+}
+
+@media screen and (max-width: 768px) {
+    [sm-cols="12"] {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.primary-button {
+    background-color: #FCD240;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
