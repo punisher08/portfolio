@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Dashboard from '../components/DashboardPage'
-import HelloWorld from '../components/HelloWorld.vue'
-import Login from '../components/LoginPage.vue'
 import Porfolio from '../components/portfolio/IndexPage.vue'
+import About from '../components/portfolio/AboutPage.vue'
+import Contact from '../components/portfolio/ContactPage.vue'
 const auth = [
   {
     path: '/dashboard',
@@ -18,15 +18,15 @@ const guests = [
     component: Porfolio
   },
   {
-    path: "/login",
-    name: "Login",
-    component: Login,
+    path: '/about',
+    name: 'About',
+    component: About
   },
   {
-    path: '/hello',
-    name: 'HelloWorld',
-    component: HelloWorld
-  },
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  }
 
 ];
 

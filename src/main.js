@@ -9,6 +9,7 @@ import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 import '@mdi/font/css/materialdesignicons.css';
 import "./assets/css/styles.css";
+import "./assets/css/vue.-styles.css";
 // AOS
 import AOS from 'aos';
 import 'aos/dist/aos.css';

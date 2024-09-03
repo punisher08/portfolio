@@ -1,28 +1,6 @@
 <template dark>
-    <v-container class="dark index" data-aos="fade-right">
-        <v-col cols="12">
-            <v-card class="flex">
-                <div class="logo">
-                    <h1>WE<span>volution</span></h1>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Works</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                <div class="cta">
-                    <button>
-                        <span> Let's talk </span>
-                    </button>
-                    <span class="material-icons">
-                        north_east
-                    </span>
-                </div>
-            </v-card>
-        </v-col>
+    <v-container class="dark index" data-aos="fade-left">
+        <NavBar />
         <v-col cols="12" class="flex p-0">
             <v-col cols="4" sm-cols="12">
                 <div class="profile">
@@ -34,7 +12,8 @@
                 <div class="title">
                     <v-card class="relative">
                         <p class="title-label">Title</p>
-                        <h3 class="title">Web Developer</h3>
+                        <h3 class="title">Web Developer / Consultant</h3>
+                  
                         <v-img :src="require('../../assets/images/cus-stargay.webp')" class="star" contain width="70" />
                         <div class="arrow">
                             <svg width="58" height="40" viewBox="0 0 58 40" fill="none"
@@ -237,7 +216,7 @@
                         <div class="item6 services">
                             <v-card class="relative ">
                                 <div class="group">
-                                    <h3 class="title">BLOG</h3>
+                                    <h3 class="title">Contact</h3>
                                     <div class="services-slider">
                                         <Splide :options="{ rewind: true, perPage: 4, arrows: false, focus: 'center' }"
                                             aria-label="My Favorite Images">
@@ -263,7 +242,7 @@
                                             </SplideSlide>
                                         </Splide>
 
-                                        <div class="arrow">
+                                        <div class="arrow" @click="$router.push({name:'Contact'})">
                                             <svg width="45" height="30" viewBox="0 0 58 40" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -307,7 +286,7 @@
                                             </SplideSlide>
                                         </Splide>
 
-                                        <div class="arrow">
+                                        <div class="arrow" @click="Aboutpage">
                                             <svg width="45" height="30" viewBox="0 0 58 40" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -333,15 +312,37 @@
 
 <script>
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import NavBar from './NavBar.vue'
 export default {
     name: 'IndexPage',
     components: {
         Splide,
         SplideSlide,
+        NavBar
     },
+    methods:{
+        Aboutpage(){
+            this.$router.push('/about');
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
+ .arrow {
+            width: 50px;
+            position: absolute;
+            bottom: 50px;
+            right: 40px;
+            transition: fill 0.3s ease;
+
+            &:hover {
+                cursor: pointer;
+                path {
+                    fill: #ffb400;
+                    transition: fill 0.3s ease;
+                }
+            }
+        }
 .form {
     align-items: center;
 
@@ -367,7 +368,7 @@ export default {
         padding: 12px 24px;
         display: block;
         border-radius: 100px;
-        background: #9747ff;
+        background: #ffb400;
         text-align: center;
         transition: all 0.4s;
         margin-top: 20px;
@@ -487,7 +488,7 @@ export default {
 
                     span {
                         font-weight: bold;
-                        color: #9747ff;
+                        color: #ffb400;
                         font-size: 2rem;
                     }
                 }
@@ -521,7 +522,7 @@ export default {
                     padding: 12px 24px;
                     display: block;
                     border-radius: 100px;
-                    background: #9747ff;
+                    background: #ffb400;
                     text-align: center;
                     transition: all .4s;
 
@@ -538,7 +539,7 @@ export default {
                     align-items: center;
                     justify-content: center;
                     border-radius: 50%;
-                    background: #9747ff;
+                    background: #ffb400;
                     transition: all .4s;
                 }
             }
@@ -568,7 +569,7 @@ export default {
 
             &:hover {
                 path {
-                    fill: #9747ff;
+                    fill: #ffb400;
                     transition: fill 0.3s ease;
                 }
             }
