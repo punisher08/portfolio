@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="pt-5 mt-5">
-                    <button :class="`btn-main flex items-center justify-center bg-yellow}`">
+                    <button :class="`btn-main flex items-center justify-center bg-yellow}`" @click="handleCV()">
                         DOWNLOAD CV <i class="fa-solid fa-download"></i></button>
                 </div>
             </div>
@@ -141,7 +141,7 @@ export default {
             personalData: [
                 { label: 'First Name', value: 'Jhomel' },
                 { label: 'Last Name', value: 'Ignacio' },
-                { label: 'Age', value: '27' },
+                { label: 'Age', value: '28' },
                 { label: 'Gender', value: 'Male' },
                 { label: 'Nationality', value: 'Filipino' },
                 { label: 'Address', value: 'Barangay Care Tarlac City' },
@@ -153,23 +153,27 @@ export default {
             skills: [
                 { label: 'HTML', rate: '80' },
                 { label: 'CSS', rate: '80' },
-                { label: 'PHP', rate: '70' },
-                { label: 'JAVASCRIPT', rate: '70' },
-                { label: 'WORDPRESS', rate: '80' },
+                { label: 'PHP', rate: '80' },
+                { label: 'JAVASCRIPT', rate: '80' },
+                { label: 'WORDPRESS', rate: '85' },
                 { label: 'LARAVEL', rate: '70' },
                 { label: 'VUEJS', rate: '70' },
-                { label: 'SHOPIFY', rate: '70' },
+                { label: 'SHOPIFY', rate: '80' },
             ],
             cards: [
-                { label1: 'Years of Experience in', label2: 'WORDPRESS', experience: '3' },
+                { label1: 'Years of Experience in', label2: 'WORDPRESS', experience: '5' },
                 { label1: 'Years of Experience in', label2: 'LARAVEL', experience: '2' },
                 { label1: 'Years of Experience in', label2: 'VUEJS', experience: '1' },
-                { label1: 'Projects', label2: 'Created', experience: '9' },
+                { label1: 'Projects', label2: '', experience: '100' },
 
             ],
         }
     },
     methods: {
+        handleCV(){
+            const url = "https://drive.google.com/file/d/185bpf0FVcaux0ThuSs36cigBfuTfPgdk/view";
+            window.open(url, '_blank');
+        },
         async UpdateprogressbarState() {
             if (this.current_page === 'about') {
                 this.progressbarCalled = true;

@@ -3,6 +3,7 @@ import Dashboard from '../components/DashboardPage'
 import Porfolio from '../components/portfolio/IndexPage.vue'
 import About from '../components/portfolio/AboutPage.vue'
 import Contact from '../components/portfolio/ContactPage.vue'
+import Works from '../components/portfolio/ProjectsPage.vue'
 const auth = [
   {
     path: '/dashboard',
@@ -26,6 +27,11 @@ const guests = [
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/works',
+    name: 'Works',
+    component: Works
   }
 
 ];

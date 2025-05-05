@@ -29,6 +29,122 @@
                     </v-card>
                 </div>
             </v-col>
+            <!-- mobile -->
+            
+            <div class="slider my-skills mobile-version">
+                            <div class="slider-item">
+                                <v-card class="relative" style="display:block;">
+                                    <Splide
+                                        :options="{ rewind: true, perPage: 3, arrows: false, focus: 'center', autoplay: true }"
+                                        aria-label="My Favorite Images">
+                                        <SplideSlide>
+                                            <div class="group">
+                                                <v-img :src="require('../../assets/images/skills/html-1.svg')" class=""  width="50" />
+                                            </div>
+                                        </SplideSlide>
+                                        <SplideSlide>
+                                            <div class="group">
+                                                <v-img :src="require('../../assets/images/skills/css-3.svg')" class=""  width="50" />
+                                            </div>
+                                        </SplideSlide>
+                                        <SplideSlide>
+                                            <div class="group">
+                                                <v-img :src="require('../../assets/images/skills/javascript-1.svg')" class=""  width="50" />
+                                            </div>
+                                        </SplideSlide>
+                                        <SplideSlide>
+                                            <div class="group">
+                                                <v-img :src="require('../../assets/images/skills/vue-js-icon.svg')" class=""  width="50" />
+                                            </div>
+                                        </SplideSlide>
+                                        <SplideSlide>
+                                            <div class="group">
+                                                <v-img :src="require('../../assets/images/skills/vuetify.svg')" class=""  width="50" />
+                                            </div>
+                                        </SplideSlide>
+                                        <SplideSlide>
+                                            <div class="group">
+                                                <v-img :src="require('../../assets/images/skills/laravel-2.svg')" class=""
+                                                    contain width="50" />
+                                            </div>
+                                        </SplideSlide>
+                                        <SplideSlide>
+                                            <div class="group">
+                                                <v-img :src="require('../../assets/images/skills/react-2.svg')" class=""
+                                                    contain width="50" />
+                                            </div>
+                                        </SplideSlide>
+                                        <SplideSlide>
+                                            <div class="group">
+                                                <v-img :src="require('../../assets/images/skills/magento-icon.svg')" class=""
+                                                    contain width="50" />
+                                            </div>
+                                        </SplideSlide>
+                                        <SplideSlide>
+                                            <div class="group">
+                                                    <v-img :src="require('../../assets/images/skills/shopify-icon.svg')" class=""
+                                                    contain width="50" />
+                                            </div>
+                                        </SplideSlide>
+                                        <SplideSlide>
+                                            <div class="group">
+                                                <v-img :src="require('../../assets/images/skills/wordpress-icon-1.svg')" class=""
+                                                    contain width="50" />
+                                            </div>
+                                        </SplideSlide>
+                                        <SplideSlide>
+                                            <div class="group">
+                                                <v-img :src="require('../../assets/images/skills/firebase-1.svg')" class=""
+                                                    contain width="50" />
+                                            </div>
+                                        </SplideSlide>
+
+                                    </Splide>
+                                </v-card>
+                            </div>
+                            <div class="inner-column">
+                                <div class="years">
+                                    <v-card class="relative">
+                                        <div class="group">
+                                            <h3 class="title">04</h3>
+                                            <p class="title-label">Years of experience</p>
+
+                                        </div>
+                                    </v-card>
+                                    <v-card class="relative">
+                                        <div class="group">
+                                            <h3 class="title">+100</h3>
+                                            <p class="title-label">Total Projects</p>
+
+                                        </div>
+                                    </v-card>
+                                </div>
+                                <div class="social-icons">
+                                    <v-card class="relative">
+                                        <div class="group">
+                                            <a href="https://github.com/punisher08" target="_blank">
+                                            <v-img :src="require('../../assets/images/social/git.svg')" class="" contain
+                                                width="50" />
+                                            </a>
+                                        </div>
+                                        <div class="group">
+                                            <a href="https://www.linkedin.com/in/jhomel-ignacio-67b298203/" target="_blank">
+                                            <v-img :src="require('../../assets/images/social/linkedin.svg')" class="" contain
+                                                width="50" />
+                                            </a>
+                                        </div>
+                                        <div class="group">
+                                            <v-img :src="require('../../assets/images/social/facebook.svg')" class="" contain
+                                                width="50" />
+                                        </div>
+                                     
+                                    </v-card>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+            <!-- eo mobile -->
             <v-col cols="8" sm-cols="12">
                 <div class="grid-lists">
                     <div class="grid-container">
@@ -185,7 +301,7 @@
                                     </v-card>
                                     <v-card class="relative">
                                         <div class="group">
-                                            <h3 class="title">+50</h3>
+                                            <h3 class="title">+100</h3>
                                             <p class="title-label">Total Projects</p>
 
                                         </div>
@@ -194,12 +310,16 @@
                                 <div class="social-icons">
                                     <v-card class="relative">
                                         <div class="group">
+                                            <a href="https://github.com/punisher08" target="_blank">
                                             <v-img :src="require('../../assets/images/social/git.svg')" class="" contain
                                                 width="50" />
+                                            </a>
                                         </div>
                                         <div class="group">
+                                            <a href="https://www.linkedin.com/in/jhomel-ignacio-67b298203/" target="_blank">
                                             <v-img :src="require('../../assets/images/social/linkedin.svg')" class="" contain
                                                 width="50" />
+                                            </a>
                                         </div>
                                         <div class="group">
                                             <v-img :src="require('../../assets/images/social/facebook.svg')" class="" contain
@@ -328,6 +448,15 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.mobile-version{
+    display: none;
+    @media screen and (max-width:768px){
+        display: block;
+    }
+}
+.index .slider {
+    width: 100%;
+}
  .arrow {
             width: 50px;
             position: absolute;
@@ -425,16 +554,24 @@ export default {
     gap: 10px;
     padding: 10px 0px;
 
-    @media screen and (max-width:768px) {
-        // grid-template-areas:unset;
-        // grid-template-columns: repeat(1,1fr);
-    }
+    @media screen and (max-width: 768px) {
+    grid-template-areas:
+      'works'
+      'slider'
+      'menu'
+      'years'
+      'right';
+    // grid-template-columns: 1fr;
+  }
 }
 
 
 
 .grid-lists {
     padding: 15px 0px;
+    @media screen and (max-width:768px) {
+        display: none;
+    }
 }
 
 .p-0 {
@@ -640,6 +777,9 @@ export default {
             grid-template-columns: 60% auto;
             gap: 20px;
             margin-top: 20px;
+            @media screen and (max-width:768px) {
+                grid-template-columns: 1fr;
+            }
 
             .years {
                 .v-card {
